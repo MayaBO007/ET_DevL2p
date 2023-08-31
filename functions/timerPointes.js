@@ -151,9 +151,9 @@ function timeToWait() {
 let studySessionData = {
     startDate: "",
     doneInstructions: "",
-    doneDay1: "",
-    doneDay2: "",
-    doneDay3: "",
+    isDayDone: "",
+    doneTest1: "",
+    doneTest2: "",
     expDaysDate: ""
 };
 
