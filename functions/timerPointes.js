@@ -167,22 +167,24 @@ function updateDates() {
     let fullDate = new Date();
     let timeNow = getTodayStartTime();
     let today = getTodayDate();
-    // if (saveData.doneDays == undefined){
-    if (studySessionData.doneInstructions == "") {
-        yesterday = null;
-        yesterdayPlusOne = null
-    } else if ((studySessionData.doneDay1 == "") && (studySessionData.doneInstructions != "")) {
+    if ((studySessionData == undefined) || (studySessionData.doneInstructions == "")) {
+        return
+    } else if ((studySessionData.isDayDone == "") && (studySessionData.doneInstructions != "")) {
         yesterday = null;
         yesterdayPlusOne = null;
+        nextDay = new Date(studySessionData.expDaysDate)
+        yesterdayMinusOne = nextDay.setDate(nextDay.getDate() - 1);
+        yesterdayMinusOne = new Date(yesterdayMinusOne);
     } else {
-        // let yesterday = new Date(saveData.expDays.date= new Date(jatos.studySessionData.expDaysDate);
         yesterday = new Date(studySessionData.expDaysDate)
         nextDay = new Date(studySessionData.expDaysDate)
         yesterdayPlusOne = nextDay.setDate(nextDay.getDate() + 1);
         yesterdayPlusOne = new Date(yesterdayPlusOne)
+        yesterdayMinusOne = yesterday;
     }
-    return { fullDate, timeNow, today, yesterday, yesterdayPlusOne }
+    return { fullDate, timeNow, today, yesterday, yesterdayPlusOne, yesterdayMinusOne }
 }
+
 
 
 const todayHeb = ":היום הרווחת";
