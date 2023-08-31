@@ -12,8 +12,8 @@ function timeline() {
             platform.saveSession(studySessionData, true);
             platform.goToUrl("instructions/questions/Multiple-Choice-Quiz-JavaScript-master/index.html");
         }
-        goIns();
     }
+    goIns();
 }
 
 
