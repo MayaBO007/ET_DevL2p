@@ -88,8 +88,8 @@ async function start2tests() {
                                             //     document.getElementById("iframe-element").src = "";
                                             //     document.getElementById("iframe-element").style.display = "none";
                                             let startButtons = async function () {
-                                                showButtons();                                       //     clearInterval(sessionInterval2Test2);
                                                 clearInterval(sessionInterval2Test2);
+                                                showButtons();                                       //     clearInterval(sessionInterval2Test2);
                                                 let endButtonsTest = await startIntervalButtons();
                                                 if (endButtonsTest == "done4") {
                                                     clearInterval(sessionIntervalButtons);
