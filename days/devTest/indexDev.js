@@ -7,8 +7,8 @@ const totalWins = {
 function timeline() {
     let startDayFour = async function () {
         platform.getAllSessions().then((data) => {
-            getIndexSessionData(data).then((i) => {
-                studySessionData = data[i];
+            getIndexSessionData(data).then((indexI) => {
+                studySessionData = data[indexI];
                 let updatedDates = updateDates();
                 if (updatedDates.fullDate.getDate() == updatedDates.yesterday.getDate()) { //|| yesterdayPlusOne.getDate() - fullDate.getDate() > 25 ) {
                     if (window.matchMedia("(orientation: landscape)").matches) {
