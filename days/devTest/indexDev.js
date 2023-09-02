@@ -46,13 +46,13 @@ function timeline() {
                                     let startTrainning = await startInterval2Tests2();
                                     // button = randDevButton();
                                     if (startTrainning == "done3") {
-                                        document.getElementById('startDevtestButtonBlue').style.display = "inline";
+                                        document.getElementById('startDevtestButtonRed').style.display = "inline";
                                         document.getElementById("iframe-element").style.top = "1%"
                                         document.getElementById("iframe-element").src = "../../timer/timer.html";
                                         document.getElementById('iframe-element').classList.remove('hidden');
                                         document.getElementById("iframe-element").style.display = "inline";
                                         setTimeout(() => {
-                                            document.getElementById('startDevtestButtonBlue').style.display = "none";
+                                            document.getElementById('startDevtestButtonRed').style.display = "none";
                                             document.getElementById("iframe-element").style.display = "none";
                                             let startDevaluation = async function () {
                                                 let doneTest2 = await startDevTest(); // add promise and resolve
