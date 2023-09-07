@@ -21,7 +21,9 @@ function moveToDay() {
                 if (
                     studySessionData.isDayDone === "done" &&
                     studySessionData.doneTest1 !== "doneTest1" ||
-                    Number(todayDate) === Number(dayDate())) {
+                    Number(todayDate) === Number(dayDate()) ||
+                    studySessionData.subId == "64f1e80dd2c8fb647d0add60"
+                ) {
                     platform.goToUrl("days/training/training.html");
                 } else if (
                     studySessionData.isDayDone !== "done" &&
