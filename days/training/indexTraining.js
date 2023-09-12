@@ -53,6 +53,7 @@ function timeline() {
                             studySessionData.isDayDone = "done";
                             studySessionData.expDaysDate = updatedDates.fullDate;
                             platform.saveSession(studySessionData, true).then(() => {
+                                clearInterval(sessionIntervalTrainingDay);
                                 document.getElementById("endDayMsg").style.display = "inline";
                                 document.getElementById("endDayMsg").addEventListener("click", function () {
                                     showWinnings()
