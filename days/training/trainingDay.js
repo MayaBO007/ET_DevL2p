@@ -34,7 +34,6 @@ platform.saveSession(responsesTrainingData, true)
 async function trainingDay() {
     return new Promise(resolve => {
         countingCars = 0;
-        breaks = 0;
         //       let x = 0;
         document.getElementById("startButton").style.display = "inline";
         document.getElementById("redButton").style.display = "inline";
@@ -47,7 +46,6 @@ async function trainingDay() {
             platform.saveSession(studySessionData, true);
             function startIntervalTrainingDay() {
                 let randCount = randCountAirplane();
-                document.getElementById("break").style.display = "none";
                 document.getElementById("redButton").style.display = "inline";
                 document.getElementById("blueButton").style.display = "inline";
                 document.getElementById("gameScreen").style.display = "inline";

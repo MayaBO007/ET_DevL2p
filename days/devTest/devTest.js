@@ -35,7 +35,6 @@ document.getElementById("blueButton").addEventListener("click", function () {
 
 async function startDevTest() {
     return new Promise(resolve => {
-        breaks = 0;
         countingCars = 0;
         count = 0;
         function startIntervalDevtest() {

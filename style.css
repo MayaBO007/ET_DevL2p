@@ -24,18 +24,6 @@
 
 }
 
-#startDevtestButton {
-    position: absolute;
-    left: 27.5%;
-    top: 20%;
-    width: 45%;
-    height: 75%;
-    border: none;
-    color: none;
-    background-color: transparent;
-    display: none;
-}
-
 #moneyCar {
     position: absolute;
     left: 10%;
@@ -64,39 +52,6 @@
     }
 }
 
-
-
-#startYellowTestButton {
-    position: absolute;
-    left: 24%;
-    top: 1%;
-    width: 52%;
-    height: 99%;
-    border: none;
-    color: none;
-    background-color: transparent;
-    display: none;
-}
-
-/* #startYellowTestButton:active {
-    transform: translateY(4px);
-} */
-
-#startSwitchTestButton {
-    position: absolute;
-    left: 27.5%;
-    top: 10%;
-    width: 45%;
-    height: 80%;
-    border: none;
-    color: none;
-    background-color: transparent;
-    display: none;
-}
-
-/* #startSwitchTestButton:active {
-    transform: translateY(4px);
-} */
 
 #startDevtestButtonBlue {
     position: absolute;
@@ -239,32 +194,6 @@
 
 }
 
-#yellowCar {
-
-    width: 4%;
-    height: 20%;
-    left: 48%;
-    top: 130%;
-    animation-play-state: paused;
-    position: absolute;
-    animation-name: yellowCarMoving;
-    animation-duration: 0.85s;
-    animation-fill-mode: backwards;
-    animation-iteration-count: infinite;
-    display: none;
-    /* animation-delay: 100ms; */
-
-}
-
-@keyframes yellowCarMoving {
-    from {
-        top: 130%
-    }
-
-    to {
-        top: -30%
-    }
-}
 
 #airplane {
 
@@ -718,41 +647,7 @@
 
 }
 
-/* #startAfterInstructions:active {
-    transform: translateY(4px);
 
-} */
-
-#startAfterSwitchTestButton {
-    position: absolute;
-    left: 27.5%;
-    top: 20%;
-    width: 45%;
-    height: 60%;
-    border: none;
-    color: none;
-    background-color: transparent;
-    display: none;
-
-}
-
-/* #startAfterSwitchTestButton:active {
-    transform: translateY(4px);
-
-} */
-
-#wakeup {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    border: none;
-    color: none;
-    background-color: transparent;
-    display: none;
-
-}
 
 #endOfGame {
     position: absolute;
@@ -822,74 +717,6 @@
 
 }
 
-#endYellowTestButton {
-    position: absolute;
-    left: 22.5%;
-    top: 22.5%;
-    width: 55%;
-    height: 65%;
-    border: none;
-    color: none;
-    background-color: transparent;
-    display: none;
-}
-
-/* #endYellowTestButton:active {
-    transform: translateY(4px);
-} */
-
-#break {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    border: none;
-    color: none;
-    background-color: transparent;
-    display: none;
-
-}
-
-#secCountdown {
-
-    position: absolute;
-    left: 17%;
-    top: 32%;
-    width: 55%;
-    height: 60%;
-    border: none;
-    color: none;
-    background-color: transparent;
-    display: none;
-}
-
-
-#TenSecTimeout {
-
-    position: absolute;
-    left: 40%;
-    top: 60%;
-    width: 20%;
-    height: 30%;
-    border: none;
-    color: none;
-    background-color: transparent;
-    display: none;
-}
-
-#fifteen {
-
-    position: absolute;
-    left: 40%;
-    top: 60%;
-    width: 20%;
-    height: 30%;
-    border: none;
-    color: none;
-    background-color: transparent;
-    display: none;
-}
 
 #horizontal {
     position: absolute;
@@ -931,18 +758,6 @@
 
 }
 
-#yellowCars {
-    position: absolute;
-    left: 20%;
-    top: 20%;
-    width: 60%;
-    height: 40%;
-    border: none;
-    color: none;
-    background-color: transparent;
-    display: none;
-
-}
 
 iframe[seamless] {
     display: none;
