@@ -33,7 +33,20 @@ function timeline() {
 
             }
 
-            else if (updatedDates.fullDate.getDate() == updatedDates.yesterdayPlusOne.getDate()) {
+            else if ((updatedDates.fullDate.getDate() == updatedDates.yesterdayPlusOne.getDate()) || (updatedDates.yesterday.getDate() == updatedDates.yesterdayPlusOne.getDate())) {
+                if (updatedDates.fullDate.getDate() != updatedDates.yesterdayPlusOne.getDate()) {
+                    getIndexMissedDays(data).then((indexM) => {
+                        missingDaysData = data[indexM]
+                        missingDays = missingDaysData.daysMissedNum;
+                        if (missingDays != 1) {
+                            deleteFromMissingDayData();
+                            daysMissedNum.push(1);
+                            platform.saveSession(daysMissed);
+                        } else {
+                            document.getElementById("endOfGame").style.display = "inline";
+                        }
+                    })
+                }
                 if (0 <= updatedDates.fullDate.getHours() & updatedDates.fullDate.getHours() < 5) {
                     if (window.matchMedia("(orientation: landscape)").matches) {
                         document.getElementById("fiveAM").style.display = "inline";
@@ -84,15 +97,15 @@ function timeline() {
 }
 
 
-    // startDayOne function () {
-    //  return new Promise(resolve => {
+// startDayOne function () {
+//  return new Promise(resolve => {
 
-    //     let savedData = [];
-    //     savedData = platform.getAllSessions();
-    // let getlastData = await getData();
-    // if (getlastData == "gotData") {
-    // studySessionData = savedData[0][savedData[0].length - 1];
-        // resolve("gotData");
+//     let savedData = [];
+//     savedData = platform.getAllSessions();
+// let getlastData = await getData();
+// if (getlastData == "gotData") {
+// studySessionData = savedData[0][savedData[0].length - 1];
+// resolve("gotData");
 
 //     startDayOne();
 
