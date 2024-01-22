@@ -195,7 +195,7 @@ function updateDates() {
     let today = getTodayDate();
     if ((studySessionData == undefined) || (studySessionData.doneInstructions == "")) {
         return
-    } else if ((studySessionData.isDayDone == "") && (studySessionData.doneInstructions != "") && (fullDate.getDate() - 1 == studySessionData.expDaysDate.getDate())) {
+    } else if ((studySessionData.isDayDone == "") && (studySessionData.doneInstructions != "") && (fullDate.getDate() - 1 == new Date(studySessionData.expDaysDate).getDate())) {
         yesterday = null;
         yesterdayPlusOne = null;
         nextDay = new Date(studySessionData.expDaysDate)
