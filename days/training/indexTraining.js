@@ -5,8 +5,10 @@ function timeline() {
             studySessionData = data[indexI];
             deleteFromSessionData();
             let updatedDates = updateDates();
-            let todayDate = getTodayDate().slice(0, 2);
-            if (Number(todayDate) === Number(dayDate()) && (studySessionData.isDayDone == "")) {
+            let todayDate = new Date;
+            todayDate = todayDate.getDate();
+            if ((Number(todayDate) === Number(dayDate()) || Number(todayDate) === new Date(studySessionData.expDaysDate).getDate())
+                && (studySessionData.isDayDone == "")) {
                 updatedDates.yesterday = updatedDates.yesterdayMinusOne;
                 updatedDates.yesterdayPlusOne = updatedDates.fullDate;
             }
