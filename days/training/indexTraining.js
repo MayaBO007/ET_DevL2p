@@ -7,7 +7,7 @@ function timeline() {
             let updatedDates = updateDates();
             let todayDate = new Date;
             todayDate = todayDate.getDate();
-            if ((Number(todayDate) === Number(dayDate()) || Number(todayDate) === new Date(studySessionData.expDaysDate).getDate())
+            if ((Number(todayDate) === Number(dayDate()) || Number(todayDate) === new Date(studySessionData.expDaysDate).getDate() + 1)
                 && (studySessionData.isDayDone == "")) {
                 updatedDates.yesterday = updatedDates.yesterdayMinusOne;
                 updatedDates.yesterdayPlusOne = updatedDates.fullDate;
