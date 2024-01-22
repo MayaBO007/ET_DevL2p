@@ -11,6 +11,10 @@ function timeline() {
                 && (studySessionData.isDayDone == "")) {
                 updatedDates.yesterday = updatedDates.yesterdayMinusOne;
                 updatedDates.yesterdayPlusOne = updatedDates.fullDate;
+                if (Number(todayDate) === new Date(studySessionData.expDaysDate).getDate() + 1) {
+                    daysMissedNum.push(1);
+                    platform.saveSession(daysMissed);
+                }
             }
             if (updatedDates.fullDate.getDate() == updatedDates.yesterday.getDate()) { //|| yesterdayPlusOne.getDate() - fullDate.getDate() > 25 ) {
                 // document.addEventListener("DOMContentLoaded", function () {
