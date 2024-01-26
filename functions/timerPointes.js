@@ -201,8 +201,9 @@ function updateDates() {
         lastGame = null;
         yesterdayPlusOne = null;
     } else {
-        lastGame = new Date(studySessionData.expDaysDate)
-        yesterdayPlusOne = lastGame.setDate(lastGame.getDate() + 1);
+        lastGame = new Date(studySessionData.expDaysDate);
+        date2 = new Date(studySessionData.expDaysDate)
+        yesterdayPlusOne = date2.setDate(date2.getDate() + 1);
         yesterdayPlusOne = new Date(yesterdayPlusOne)
     }
     return { fullDate, timeNow, today, yesterday, yesterdayPlusOne, lastGame }
