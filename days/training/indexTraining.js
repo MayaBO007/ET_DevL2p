@@ -40,7 +40,7 @@ function timeline() {
             else if ((updatedDates.fullDate.getDate() == updatedDates.yesterdayPlusOne.getDate()) || (updatedDates.yesterday.getDate() == updatedDates.yesterdayPlusOne.getDate())) {
                 if (updatedDates.fullDate.getDate() != updatedDates.yesterdayPlusOne.getDate()) {
                     getIndexMissedDays(data).then((indexM) => {
-                        if (indexM == "null") {
+                        if (indexM == null) {
                             daysMissedNum.push(1);
                             platform.saveSession(daysMissed);
                         } else {
