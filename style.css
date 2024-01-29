@@ -24,6 +24,18 @@
 
 }
 
+#startDevtestButton {
+    position: absolute;
+    left: 27.5%;
+    top: 20%;
+    width: 45%;
+    height: 75%;
+    border: none;
+    color: none;
+    background-color: transparent;
+    display: none;
+}
+
 #moneyCar {
     position: absolute;
     left: 10%;
@@ -52,6 +64,39 @@
     }
 }
 
+
+
+#startYellowTestButton {
+    position: absolute;
+    left: 24%;
+    top: 1%;
+    width: 52%;
+    height: 99%;
+    border: none;
+    color: none;
+    background-color: transparent;
+    display: none;
+}
+
+/* #startYellowTestButton:active {
+    transform: translateY(4px);
+} */
+
+#startSwitchTestButton {
+    position: absolute;
+    left: 27.5%;
+    top: 10%;
+    width: 45%;
+    height: 80%;
+    border: none;
+    color: none;
+    background-color: transparent;
+    display: none;
+}
+
+/* #startSwitchTestButton:active {
+    transform: translateY(4px);
+} */
 
 #startDevtestButtonBlue {
     position: absolute;
@@ -194,6 +239,32 @@
 
 }
 
+#yellowCar {
+
+    width: 4%;
+    height: 20%;
+    left: 48%;
+    top: 130%;
+    animation-play-state: paused;
+    position: absolute;
+    animation-name: yellowCarMoving;
+    animation-duration: 0.85s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    display: none;
+    /* animation-delay: 100ms; */
+
+}
+
+@keyframes yellowCarMoving {
+    from {
+        top: 130%
+    }
+
+    to {
+        top: -30%
+    }
+}
 
 #airplane {
 
@@ -432,10 +503,10 @@
 
 #next {
     position: fixed;
-    left: 29%;
+    left: 24%;
     top: 87%;
-    width: 42%;
-    height: 10%;
+    width: 52%;
+    height: 8%;
     border: none;
     color: none;
     background-color: transparent;
@@ -450,9 +521,9 @@
 
 #doNotDisturb {
     position: fixed;
-    left: 20%;
+    left: 12.5%;
     top: 65%;
-    width: 60%;
+    width: 75%;
     height: 17%;
     border: none;
     color: none;
@@ -467,10 +538,10 @@
 
 #doNotDisturbGoBack {
     position: fixed;
-    left: 35%;
+    left: 30%;
     top: 85%;
-    width: 28%;
-    height: 10%;
+    width: 40%;
+    height: 12%;
     border: none;
     color: none;
     background-color: transparent;
@@ -485,9 +556,9 @@
 
 #demoStart {
     position: fixed;
-    left: 27.5%;
+    left: 16%;
     top: 80%;
-    width: 45%;
+    width: 70%;
     height: 15%;
     border: none;
     color: none;
@@ -565,10 +636,10 @@
 
 #corrRed {
     position: fixed;
-    left: 28.5%;
+    left: 35%;
     top: 28%;
-    width: 43%;
-    height: 34%;
+    width: 30%;
+    height: 36%;
     border: none;
     color: none;
     background-color: transparent;
@@ -578,10 +649,10 @@
 
 #corrBlue {
     position: fixed;
-    left: 28.5%;
+    left: 35%;
     top: 28%;
-    width: 43%;
-    height: 34%;
+    width: 30%;
+    height: 36%;
     border: none;
     color: none;
     background-color: transparent;
@@ -647,7 +718,10 @@
 
 }
 
+/* #startAfterInstructions:active {
+    transform: translateY(4px);
 
+} */
 
 #endOfGame {
     position: absolute;
@@ -717,7 +791,6 @@
 
 }
 
-
 #horizontal {
     position: absolute;
     left: 5%;
@@ -756,11 +829,6 @@
     background-color: transparent;
     display: none;
 
-}
-
-
-iframe[seamless] {
-    display: none;
 }
 
 #problem {
