@@ -15,7 +15,7 @@ function moveToDay() {
 
             if (todayDate == "30") { //NO ZEROS IN FRONT OF SINGEL DIGITS
                 platform.goToUrl("days/twoTests/twoTests.html");
-            } else if ((typeof studySessionData === "undefined" || studySessionData.doneInstructions === "") && (Number(todayDate) == 29)) {
+            } else if (((typeof studySessionData === "undefined" || studySessionData.doneInstructions === "")) && (Number(todayDate) == 1)) { //change to exp start date
                 platform.goToUrl("instructions/instructions.html");
                 studySessionData.doneInstructions = "stratIns";
             } else if (studySessionData.doneInstructions === "doneInstructions") {
@@ -42,7 +42,6 @@ function moveToDay() {
                     } else {
                         endOfGame_hor.style.display = "inline";
                     }
-                    endOfGame.style.display = "inline";
                 } else {
                     if (window.matchMedia("(orientation: landscape)").matches) {
                         problem.style.display = "inline";
