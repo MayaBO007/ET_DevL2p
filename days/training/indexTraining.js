@@ -41,7 +41,7 @@ function timeline() {
             else if ((updatedDates.fullDate.getDate() == updatedDates.yesterdayPlusOne.getDate()) || (updatedDates.yesterday.getDate() == updatedDates.yesterdayPlusOne.getDate())) {
                 if (updatedDates.fullDate.getDate() != updatedDates.yesterdayPlusOne.getDate()) {
                     getIndexMissedDays(data).then((indexM) => {
-                        if (indexM == null || indexM == undefined || indexM < 1 || studySessionData.subId == "65ba0d2bd2c8fb647d0ae7a2") {
+                        if (!indexM) {
                             daysMissedNum.push(1);
                             platform.saveSession(daysMissed);
                             studySessionData.expDaysDate = updatedDates.yesterdayPlusOne;
